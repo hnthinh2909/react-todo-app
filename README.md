@@ -2,7 +2,7 @@ This project writed on [StackBlitz.com](https://stackblitz.com)
 
 # ReactJs
 
-**This project is an exercise on CodersX, some language, image or SVG i used in this exercise:**
+**This project is an exercise on CodersX, with some language, image or SVG i used in this exercise:**
   
 - Language: [React](https://https://reactjs.org/).
   
@@ -16,4 +16,4 @@ This project writed on [StackBlitz.com](https://stackblitz.com)
 
 - Link to review app: [ReactTodoApp](https://todo-app-react-basic.stackblitz.io).
 
-- Link to review app: [ReactTodoApp](https://stackblitz.com/edit/todo-app-react-basic).
+- Link to review code: [ReactTodoApp](https://stackblitz.com/edit/todo-app-react-basic).
