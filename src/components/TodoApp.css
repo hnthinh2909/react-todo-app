@@ -1,0 +1,197 @@
+.TodoApp {
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #41a0c5, #c2e0eb);
+  box-shadow: 2px 3px 2px 1px;
+  position: relative;
+}
+
+.bgImage img{
+  width: 80%;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 165px);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+}
+
+.Header span:nth-child(3) {
+  opacity: 0;
+}
+
+.ListTodo {
+  padding: 0 15px;
+  font-size: 13px;
+}
+
+.ListComplete {
+  padding: 0 15px;
+  font-size: 13px;
+}
+
+.Title {
+  color: white;
+}
+
+.ListComplete p{
+  color: white;
+}
+
+.listTop {
+  padding: 2.5px 15px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px; 
+  position: relative;
+  animation: fadeIn linear 0.4s;
+}
+
+.listBottom {
+  padding: 2.5px 15px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #41a0c5;
+  box-shadow: #41a0c5 1px 1px 1px 1px;
+  background-color: #68bddf;
+  margin-bottom: 10px; 
+  position: relative;
+  animation: fadeIn linear 0.4s;
+}
+
+.listBottom p {
+  text-decoration: line-through;
+}
+
+.btnDone {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: none;
+  animation: fadeIn linear 0.15s;
+}
+
+.listTop:hover .btnDone{
+  display: inherit;
+}
+
+.btnDone img {
+  width: 20px;
+  animation: fadeIn linear 0.2s;
+}
+
+.btnDone {
+  
+}
+
+.btnDelete {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  display: none;
+}
+
+.btnDelete img {
+  width: 20px;
+  animation: fadeIn linear 0.2s;
+}
+
+.listBottom:hover .btnDelete{
+  display: inherit;
+}
+
+.AddBtn {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 15px;
+  right: calc(50% - 35px);
+  cursor: pointer;
+}
+
+.AddBtn img {
+  width: 45px;
+}
+
+/* .layout {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+} */
+
+.formModal {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  /* position: absolute;
+  z-index: 2; */
+}
+
+.textModal input{
+  width: 310px;
+  margin: 0 28px;
+  font-size: 17px;
+  outline: none;
+  padding: 10px 15px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px; 
+  animation: fadeIn linear 0.15s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btnQuestion {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.btnQuestion a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btnAccept {
+  background-color: #7affa9;
+}
+
+.btnDecline {
+  background-color: #ff7070;
+  margin-right: 5px;
+}
+
+.btnExit {
+  width: 25px;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
